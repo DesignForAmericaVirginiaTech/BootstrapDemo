@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap and Javascript</title>
+
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+		<!-- Our stuff -->
+		<script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+
+	<body>
+
+		<!-- Titles -->
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-4">
+				<h1 class="title">Create a Profile</h1>
+			</div>
+			<div class="col-md-4">
+				<h1 class="title">Delete a Profile</h1>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+
+		<!-- Forms -->
+		<div class="row">
+			<!-- empty column -->
+			<div class="col-md-2"></div>
+
+			<!-- Create Profile Form -->
+			<div class="col-md-4">
+				<form role="form">
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Name</label>
+				    <input type="text" class="form-control" id="name" placeholder="Enter name">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="password" placeholder="Password">
+				  </div>
+				</form>
+
+				<button class="btn btn-default" onclick="save()">Save Profile</button>
+				<button class="btn btn-warning" onclick="printList()">Print Profiles</button>
+			</div>
+
+			<!-- Delete Profile Form -->
+			<div class="col-md-4">
+				<form role="form" id="deleteForm">
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Name</label>
+				    <input type="text" class="form-control" id="searchName" placeholder="Enter name">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="searchPassword" placeholder="Password">
+				  </div>
+				</form>
+				<button class="btn btn-danger" onclick="deleteProfile()">Delete Profile</button>
+			</div>
+
+			<!-- Empty column -->
+			<div class="col-md-2"></div>
+		</div>
+
+
+	</body>
+</html>
