@@ -29,6 +29,10 @@ function printList() {
 	console.log(profiles);
 }
 
+function list() {
+	console.log("LIST");
+}
+
 /**
  * delete a profile from the array
  */
@@ -40,7 +44,7 @@ function deleteProfile() {
 	var deleted = 0;
 
 	//search through the elements of the array for the one we want to delete
-	for (var i = 0; i < profiles.length + 5; i++) {
+	for (var i = 0; i < profiles.length; i++) {
 		if (profiles[i].name === name
 			&& profiles[i].password === password) {
 			//delete the profile
