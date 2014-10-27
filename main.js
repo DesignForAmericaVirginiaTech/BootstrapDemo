@@ -31,6 +31,7 @@ function printList() {
 
 function list() {
 	console.log("LIST");
+	//nothing
 }
 
 /**
