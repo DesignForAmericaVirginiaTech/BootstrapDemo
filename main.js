@@ -40,7 +40,7 @@ function deleteProfile() {
 	var deleted = 0;
 
 	//search through the elements of the array for the one we want to delete
-	for (var i = 0; i < profiles.length; i++) {
+	for (var i = 0; i < profiles.length + 5; i++) {
 		if (profiles[i].name === name
 			&& profiles[i].password === password) {
 			//delete the profile
